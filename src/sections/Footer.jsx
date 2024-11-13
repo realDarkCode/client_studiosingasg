@@ -1,9 +1,8 @@
 import img from "../assets/9.jpg";
 import logo from "../assets/logo.png";
 
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -37,7 +36,7 @@ export default function Footer() {
       {/* Map Section */}
       <div className="relative w-full h-[300px]">
         <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=103.84061157703401%2C1.3236274439495042%2C103.84312212467194%2C1.3254079548726532&amp;layer=mapnik"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=103.89668583869934%2C1.3142663291137027%2C103.89919638633728%2C1.3160468467391837&amp;layer=mapnik"
           className="w-full h-full"
           title="La Bettola Location"
           allowFullScreen

@@ -54,8 +54,13 @@ export default function About() {
             ingredients. Join us for a memorable dining experience.
           </p>
           <h3 className="font-medium text-lg text-brand-heading text-center sm:text-start">
-            <a href="/ala_carte_menu.pdf" download="ala_carte_menu.pdf">
-              Our Ala Carte Menu
+            <a href="/wine_menu.pdf" download="ala_carte_menu.pdf">
+              Our Ala Carte Wine Menu
+            </a>
+          </h3>
+          <h3 className="font-medium text-lg text-brand-heading text-center sm:text-start">
+            <a href="/food_menu.pdf" download="ala_carte_menu.pdf">
+              Our Ala Carte Food Menu
             </a>
           </h3>
         </div>
