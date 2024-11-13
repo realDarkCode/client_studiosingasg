@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Bettola</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hind:wght@300;400;500;600;700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+
+    <link rel="stylesheet" crossorigin href="./assets/styles.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <!-- Tailwind css framework and config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', "sans-serif"], // Sets Inter as the default sans-serif font
+              heading: ['"Inknut Antiqua"', "serif"], // Custom font option for Inknut Antiqua
+              medium: ['"Epilogue"', "sans-serif"], // Custom font option for Epilogue
+            },
+            colors: {
+              brand: {
+                heading: "#111827",
+                text: "#374151  ",
+                button: "#634D38",
+                hover: "#825d39",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <!-- Header Section -->
+      <header>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 shadow-sm">
+          <div class="flex justify-between items-center py-4">
+            <!-- Hamburger Menu Button (Mobile) -->
+            <div class="md:hidden">
+              <button
+                id="menu-btn"
+                class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              >
+                <svg
+                  id="menu-icon"
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="menu-open-icon"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                  <path
+                    id="menu-close-icon"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                    class="hidden"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Logo Section -->
+            <div class="flex justify-center py-4">
+              <img
+                src="./assets/logo.png"
+                alt="La Bettola Logo"
+                class="h-16 md:h-32"
+              />
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav
+              class="hidden md:flex space-x-6 justify-center items-center w-full"
+            >
+              <a
+                href="#home"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >About Us</a
+              >
+              <a
+                href="#menu"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Menu</a
+              >
+              <a
+                href="https://wa.me/+6593979837"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="flex flex-col space-y-4 mt-2">
+              <a
+                href="#home"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >About Us</a
+              >
+              <a
+                href="#menu"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Menu</a
+              >
+              <a
+                href="https://wa.me/+6593979837"
+                class="text-gray-600 hover:text-gray-900 font-medium transition"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="">
+      <div class="w-full max-w-screen-lg mx-auto px-4 text-center">
+        <!-- Navbar Component (Replace with actual Navbar HTML) -->
+        <!-- You need to include your Navbar component here in plain HTML -->
+
+        <!-- Heading and Subheading -->
+        <h1 class="text-3xl font-semibold text-brand-heading mt-6 font-heading">
+          Taste Italy in Every Bite
+        </h1>
+        <p class="text-brand-text mt-2 max-w-[65%] font-sans mx-auto">
+          Experience authentic Italian flavors with every pizza slice and grill
+          delight at La Bettola. Join us for unforgettable meals at Joo Chiat
+          now.
+        </p>
+
+        <!-- Button -->
+        <div class="mt-6">
+          <a href="https://wa.me/+6593979837" target="_blank">
+            <button
+              class="bg-brand-button transition text-white py-2 px-4 rounded font-medium hover:bg-brand-hover"
+            >
+              Contact Us Now
+            </button>
+          </a>
+        </div>
+
+        <!-- Image Gallery -->
+        <div
+          class="mt-10 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 h-64"
+        >
+          <img
+            src="./assets/1.jpeg"
+            alt="Italian Dish 1"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+          <img
+            src="./assets/3.jpeg"
+            alt="Italian Dish 2"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+          <img
+            src="./assets/4.jpeg"
+            alt="Italian Dish 3"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+          <img
+            src="./assets/6.jpeg"
+            alt="Italian Dish 4"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+          <img
+            src="./assets/7.jpeg"
+            alt="Italian Dish 5"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+          <img
+            src="./assets/8.jpeg"
+            alt="Italian Dish 6"
+            class="rounded-bl-xl rounded-br-xl h-full object-cover w-full"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center px-2 md:px-4">
+      <!-- Section 1 -->
+      <div
+        class="pt-4 md:pt-8 lg:pt-28 flex flex-col md:flex-row items-center md:items-start lg:max-w-[70rem]"
+        id="about"
+      >
+        <div
+          class="md:w-1/2 flex content-center justify-center md:py-12 lg:py-0"
+        >
+          <img
+            src="./assets/2.jpeg"
+            alt="La Bettola Restaurant Interior"
+            class="rounded-lg shadow-lg h-full max-w-full lg:size-[25rem] object-cover"
+          />
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 md:ml-12">
+          <h2 class="text-3xl text-brand-heading mb-4 font-heading">
+            Authentic Italian Flavors in Singapore
+          </h2>
+          <p class="text-brand-text leading-relaxed mb-4 font-sans">
+            Welcome to La Bettola Pizza & Grill, where we bring the heart of
+            Italy to the vibrant city of Singapore. Our passion for authentic
+            Italian cuisine is reflected in every dish we serve, crafted with
+            the finest ingredients and traditional recipes. Whether you're in
+            the mood for a classic Margherita pizza or a savory grilled entrée,
+            our menu promises a culinary journey that celebrates Italy's rich
+            flavors. Join us for an unforgettable dining experience that
+            combines warm hospitality with exceptional food.
+          </p>
+          <p class="text-brand-text font-sans">
+            I am Emiddio Cioffi, Chef Owner of La Bettola, pleased to welcome
+            you all anytime, whether you want to host your business meeting or
+            savour a meal with your family and friends.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div
+        class="flex flex-col md:flex-row items-center pt-8 md:items-start lg:justify-center lg:px-16 lg:max-w-[70rem] lg:pt-24"
+        id="menu"
+      >
+        <!-- Text content -->
+        <div class="md:w-1/2 mt-8 md:mt-0 md:mr-12 lg:mr-0 order-2 md:order-1">
+          <h2 class="text-3xl text-brand-heading mb-4 font-heading">
+            Savor Authentic Italian Cuisine at La Bettola Pizza & Grill
+          </h2>
+          <p class="text-brand-text leading-relaxed mb-4 font-sans">
+            Enjoy a taste of Italy in Singapore at La Bettola Pizza & Grill. Our
+            chefs craft delicious pizzas and grilled dishes using fresh
+            ingredients. Join us for a memorable dining experience.
+          </p>
+          <h3
+            class="font-medium text-lg text-brand-heading text-center sm:text-start"
+          >
+            <a href="./assets/wine_menu.pdf" download="ala_carte_menu.pdf"
+              >Our Ala Carte Wine Menu</a
+            >
+          </h3>
+          <h3
+            class="font-medium text-lg text-brand-heading text-center sm:text-start"
+          >
+            <a href="./assets/food_menu.pdf" download="ala_carte_menu.pdf"
+              >Our Ala Carte Food Menu</a
+            >
+          </h3>
+        </div>
+        <!-- Image -->
+        <div
+          class="md:w-1/2 order-1 md:order-2 flex content-center justify-start lg:justify-end"
+        >
+          <img
+            src="./assets/5.jpeg"
+            alt="Grilled Meat Dish"
+            class="rounded-lg shadow-lg h-full max-w-full lg:size-[25rem] object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div
+        class="flex flex-col md:flex-row pt-8 items-center md:items-start lg:max-w-[70rem] lg:pt-16"
+        id="reservation"
+      >
+        <div class="md:w-1/2 flex content-center justify-center lg:py-12">
+          <img
+            src="./assets/8.jpeg"
+            alt="La Bettola Restaurant Interior"
+            class="rounded-lg shadow-lg h-full max-w-full lg:size-[25rem] object-cover"
+          />
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 md:ml-12 lg:py-28">
+          <h2 class="text-3xl text-brand-heading mb-4 font-medium">
+            Make your <br />
+            Reservation with us <br />
+            now
+          </h2>
+          <p class="text-brand-text leading-relaxed mb-4 font-sans">
+            For large booking (more than 10 guests) or last minute booking
+            please contact the restaurant directly for availability at
+            +6593979837 or +6560380260
+          </p>
+          <p class="text-brand-text font-sans">
+            You can also make reservation by email us via
+            <a href="mailto:infolabettolasg@gmail.com"
+              >infolabettolasg@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative sm:px-4 lg:px-8 pt-8 md:pt-12">
+      <!-- Hero Image with Overlay -->
+      <div class="relative z-10" id="contact">
+        <img
+          src="./assets/9.jpg"
+          alt="Dining Experience"
+          class="w-full h-[80vh] object-cover md:rounded-t-[7%] lg:rounded-t-[15%]"
+        />
+
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-brand-button bg-opacity-65 flex items-center justify-center md:rounded-t-[7%] lg:rounded-t-[15%]"
+        >
+          <div class="text-center">
+            <h1 class="text-4xl md:text-5xl text-white font-heading mb-4">
+              Discover La <br />
+              Bettola Pizza & <br />
+              Grill!
+            </h1>
+            <button
+              class="px-6 py-3 mt-4 bg-white text-black font-medium rounded-lg shadow hover:bg-gray-200 transition"
+            >
+              <a href="https://wa.me/+6593979837" target="_blank">Contact</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="relative w-full h-[300px] mt-8">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=103.89668583869934%2C1.3142663291137027%2C103.89919638633728%2C1.3160468467391837&amp;layer=mapnik"
+          class="w-full h-full"
+          title="La Bettola Location"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+
+        <!-- Location Card -->
+        <div
+          class="absolute bottom-6 left-12 bg-[#f3e4d9] rounded-lg p-4 shadow-lg"
+        >
+          <h3 class="text-lg font-heading text-brand-heading">Location</h3>
+          <p class="text-brand-text">
+            328 Joo Chiat Rd, #01-04, Singapore 427585
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="bg-black py-6 px-2 md:px-4 mt-12">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <img
+            src="./assets/logo.png"
+            alt="La Bettola Logo"
+            class="h-12 md:h-24"
+          />
+          <div
+            class="icons text-white text-3xl md:text-5xl flex flex-row gap-4"
+          >
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // JavaScript for Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden"); // Show/hide mobile menu
+        menuOpenIcon.classList.toggle("hidden"); // Toggle open icon
+        menuCloseIcon.classList.toggle("hidden"); // Toggle close icon
+      });
+    </script>
+  </body>
+</html>
