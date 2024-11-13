@@ -22,10 +22,7 @@ export default function Footer() {
               Grill!
             </h1>
             <button className="px-6 py-3 mt-4 bg-white text-black font-medium rounded-lg shadow hover:bg-gray-200 transition">
-              <a
-                href="https://web.whatsapp.com/send?phone=+6593979837"
-                target="_blank"
-              >
+              <a href="https://wa.me/+6593979837" target="_blank">
                 Contact
               </a>
             </button>

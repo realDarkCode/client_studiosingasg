@@ -76,7 +76,7 @@ const Navbar = () => {
               Menu
             </a>
             <a
-              href="#contact"
+              href="https://wa.me/+6593979837"
               className="text-gray-600 hover:text-gray-900 font-medium transition"
             >
               Contact Us
@@ -106,7 +106,7 @@ const Navbar = () => {
               Menu
             </a>
             <a
-              href="#contact"
+              href="https://wa.me/+6593979837"
               className="text-gray-600 hover:text-gray-900 font-medium transition"
             >
               Contact Us
@@ -136,7 +136,9 @@ export default function Home() {
         {/* Button */}
         <div className="mt-6">
           <button className="bg-brand-button transition text-white py-2 px-4 rounded font-medium hover:bg-brand-hover">
-            <a href="https://web.whatsapp.com/send?phone=+6593979837" target="_blank">Contact Us Now</a>
+            <a href="https://wa.me/+6593979837" target="_blank">
+              Contact Us Now
+            </a>
           </button>
         </div>
 
